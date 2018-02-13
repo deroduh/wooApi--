@@ -28,7 +28,7 @@ def wooApi(interval):
     new_order_count = 0
     for time in orders_time:
         datetime_object = datetime.strptime(str(time), '%Y-%m-%dT%H:%M:%S')
-        if (datetime.utcnow() - datetime_object).seconds <3600:
+        if (datetime.utcnow() - datetime_object).seconds <interval:
             new_order_count +=1
 
     return new_order_count

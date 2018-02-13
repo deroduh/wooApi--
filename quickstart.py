@@ -126,6 +126,6 @@ def foo():
         print("non")
 
 
-interval = 10
+interval = 300
 setInterval(foo, interval)
 
